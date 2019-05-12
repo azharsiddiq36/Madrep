@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/nav_dokter"
+        android:icon="@drawable/doctor"
+        android:title="Dokter" />
+    <item
+        android:id="@+id/nav_kunjungan"
+        android:icon="@drawable/visitor"
+        android:title="Kunjungan" />
+    <item
+        android:id="@+id/nav_obat"
+        android:icon="@drawable/pills"
+        android:title="Obat" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile" />
+</menu>
