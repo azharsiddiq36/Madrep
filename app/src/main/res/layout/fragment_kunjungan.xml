@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/fah"
+    android:layout_marginBottom="70dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_History"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kunjungan"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="60dp"
+        android:background="@drawable/button_add_background"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnAddKunjungan"/>
+
+</RelativeLayout>

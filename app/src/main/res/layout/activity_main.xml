@@ -7,9 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".Activity.MainActivity">
 
+
     <FrameLayout
         android:layout_width="match_parent"
         android:id="@+id/frameFragment"
+        android:background="@drawable/fah"
         android:layout_above="@id/navigation"
         android:layout_height="match_parent"/>
 
