@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lyInflater"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#F1F8E9"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/btnClose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/action_close" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/typoslab"
+                        android:padding="15dp"
+                        android:text="Rincian Kunjungan"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorPrimaryDark"></View>
+                    <TableLayout
+                        android:stretchColumns="2"
+                        android:padding="3dp"
+                        android:layout_margin="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <ImageView
+                                android:text="Dokter"
+                                android:src="@drawable/doctor"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvNamaDokter"
+                                android:textSize="17dp"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/typoslab"
+                                android:text="Nama DOkter"
+                                android:layout_gravity="center|left"/>
+                        </TableRow>
+                        <TableRow>
+                            <ImageView
+                                android:text="Dokter"
+                                android:src="@drawable/pills"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvNamaObat"
+                                android:textSize="14dp"
+                                android:layout_margin="4dp"
+                                android:fontFamily="@font/typoslab"
+                                android:text="Obat"
+                                android:layout_gravity="center|left"/>
+                        </TableRow>
+                    </TableLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorPrimaryDark"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBulan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/typoslab"
+                            android:padding="10dp"
+                            android:text="Bulan"
+                            android:textAlignment="center"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tvMinggu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/typoslab"
+                            android:padding="10dp"
+                            android:text="Minggu Ke - "
+                            android:textAlignment="textEnd"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorPrimaryDark"></View>
+
+                    <TextView
+                        android:id="@+id/tvCabang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/typoslab"
+                        android:padding="10dp"
+                        android:text="Cabang Pekanbaru"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/typoslab"
+                        android:padding="10dp"
+                        android:text="Lihat Map"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tvDrivingDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/typoslab"
+                        android:padding="10dp"
+                        android:text="Arahkan ke Lokasi"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+                    <Button
+                        android:id="@+id/btnTutup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_background"
+                        android:text="Tutup"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

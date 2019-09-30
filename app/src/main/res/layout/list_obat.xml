@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:isScrollContainer="true"
+    android:id="@+id/letterLayout"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="72dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="4dp"
+        android:id="@+id/cvLetter"
+        android:layout_margin="10dp">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgObat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/pills" />
+            <TableLayout
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgObat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+                <TableRow>
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/typoslab"
+                        android:text="Paracetamol"
+                        android:id="@+id/tvNamaObat"
+                        android:padding="3dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/typoslab"
+                        android:text="Pils"
+                        android:id="@+id/tvKategori"
+                        android:padding="3dp" />
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
